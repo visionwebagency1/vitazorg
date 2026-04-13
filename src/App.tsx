@@ -460,7 +460,7 @@ const PageHome = () => {
   return (
     <>
       {/* ── HERO ── */}
-      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '80svh', display: 'flex', alignItems: 'center' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '100svh', display: 'flex', alignItems: 'center' }}>
         {/* Desktop hero bg */}
         <motion.div className="hero-d" style={{ y: heroY, position: 'absolute', inset: '-8% 0', zIndex: 0 }}>
           <img src={IMG.heroD} alt="VitaZorg verzorgenden"
