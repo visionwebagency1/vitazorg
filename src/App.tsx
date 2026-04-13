@@ -464,46 +464,19 @@ const PageHome = () => {
         {/* Desktop hero bg */}
         <motion.div className="hero-d" style={{ y: heroY, position: 'absolute', inset: '-8% 0', zIndex: 0 }}>
           <img src={IMG.heroD} alt="VitaZorg verzorgenden"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 35%', display: 'block' }} />
+            style={{ width: '100%', height: '110%', objectFit: 'cover', objectPosition: 'center 35%', display: 'block' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(250,250,248,0.96) 0%, rgba(250,250,248,0.8) 45%, rgba(250,250,248,0.15) 100%)' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, var(--bg) 0%, transparent 30%)' }} />
         </motion.div>
 
         {/* Mobile hero bg */}
-        {/* Mobile hero bg */}
-<div className="hero-m" style={{ 
-  position: 'relative', 
-  width: '100%', 
-  height: '75vh', 
-  minHeight: '400px',
-  overflow: 'hidden', 
-  flexShrink: 0 
-}}>
-  <img 
-    src={IMG.heroM} 
-    alt="VitaZorg" 
-    style={{ 
-      width: '100%', 
-      height: '100%', 
-      objectFit: 'cover', 
-      objectPosition: 'center 30%', 
-      display: 'block' 
-    }} 
-  />
+        <div className="hero-m" style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img src={IMG.heroM} alt="VitaZorg"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(250,250,248,0.3) 0%, rgba(250,250,248,0.92) 55%, var(--bg) 100%)' }} />
+        </div>
 
-  {/* donkere overlay voor betere zichtbaarheid */}
-  <div style={{ 
-    position: 'absolute', 
-    inset: 0, 
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 100%)' 
-  }} />
-</div>
-
-<div className="wrap" style={{ 
-  position: 'relative', 
-  zIndex: 1, 
-  width: '100%' 
-}}>
+        <div className="wrap" style={{ position: 'relative', zIndex: 1, width: '100%', paddingTop: 120 }}>
           <div className="hero-content" style={{ maxWidth: 580 }}>
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
               style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 24 }}>
