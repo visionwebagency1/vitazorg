@@ -460,20 +460,19 @@ const PageHome = () => {
   return (
     <>
       {/* ── HERO ── */}
-      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '80svh', display: 'flex', alignItems: 'center' }}>
+      <section style={{ position: 'relative', overflow: 'hidden', minHeight: '60svh', display: 'flex', alignItems: 'center' }}>
         {/* Desktop hero bg */}
         <motion.div className="hero-d" style={{ y: heroY, position: 'absolute', inset: '-8% 0', zIndex: 0 }}>
           <img src={IMG.heroD} alt="VitaZorg verzorgenden"
-            style={{ width: '100%', height: '110%', objectFit: 'cover', objectPosition: 'center 35%', display: 'block' }} />
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 35%', display: 'block' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(250,250,248,0.96) 0%, rgba(250,250,248,0.8) 45%, rgba(250,250,248,0.15) 100%)' }} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, var(--bg) 0%, transparent 30%)' }} />
         </motion.div>
 
         {/* Mobile hero bg */}
-        <div className="hero-m" style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <img src={IMG.heroM} alt="VitaZorg"
-            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(250,250,248,0.3) 0%, rgba(250,250,248,0.92) 55%, var(--bg) 100%)' }} />
+        <div className="hero-m" style={{ position: 'relative', width: '100%', height: '52vw', minHeight: '200px', maxHeight: '280px', overflow: 'hidden', flexShrink: 0 }}>
+          <img src={IMG.heroM} alt="VitaZorg" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(250,250,248,0.6) 70%, var(--bg) 100%)' }} />
         </div>
 
         <div className="wrap" style={{ position: 'relative', zIndex: 1, width: '100%', paddingTop: 120 }}>
