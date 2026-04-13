@@ -470,12 +470,40 @@ const PageHome = () => {
         </motion.div>
 
         {/* Mobile hero bg */}
-        <div className="hero-m" style={{ position: 'relative', width: '100%', height: '52vw', minHeight: '200px', maxHeight: '280px', overflow: 'hidden', flexShrink: 0 }}>
-          <img src={IMG.heroM} alt="VitaZorg" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', display: 'block' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(250,250,248,0.6) 70%, var(--bg) 100%)' }} />
-        </div>
+        {/* Mobile hero bg */}
+<div className="hero-m" style={{ 
+  position: 'relative', 
+  width: '100%', 
+  height: '75vh', 
+  minHeight: '400px',
+  overflow: 'hidden', 
+  flexShrink: 0 
+}}>
+  <img 
+    src={IMG.heroM} 
+    alt="VitaZorg" 
+    style={{ 
+      width: '100%', 
+      height: '100%', 
+      objectFit: 'cover', 
+      objectPosition: 'center 30%', 
+      display: 'block' 
+    }} 
+  />
 
-        <div className="wrap" style={{ position: 'relative', zIndex: 1, width: '100%', paddingTop: 120 }}>
+  {/* donkere overlay voor betere zichtbaarheid */}
+  <div style={{ 
+    position: 'absolute', 
+    inset: 0, 
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.7) 100%)' 
+  }} />
+</div>
+
+<div className="wrap" style={{ 
+  position: 'relative', 
+  zIndex: 1, 
+  width: '100%' 
+}}>
           <div className="hero-content" style={{ maxWidth: 580 }}>
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
               style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 24 }}>
